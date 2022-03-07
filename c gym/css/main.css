@@ -1,0 +1,604 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  scroll-behavior: smooth;
+}
+
+header nav {
+  position: fixed;
+  z-index: 1;
+  background-color: #1a1a19;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  gap: 0 20rem;
+}
+
+header nav .fas {
+  display: none;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  letter-spacing: 2px;
+}
+
+header nav .logo {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#838383), to(#333333));
+  background-image: linear-gradient(#838383, #333333);
+  font-size: 2rem;
+  cursor: pointer;
+  color: aqua;
+}
+
+header nav .logo:hover {
+  color: red;
+  cursor: pointer;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav a:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.whole-text {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1a1a19), to(rgba(26, 25, 25, 0.5))), url(https://bit.ly/3qVMFwN);
+  background-image: linear-gradient(#1a1a19, rgba(26, 25, 25, 0.5)), url(https://bit.ly/3qVMFwN);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: aliceblue;
+  padding-top: 24%;
+}
+
+.text {
+  padding-bottom: 18%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #7b7e81;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  margin-top: 2rem;
+  padding: 1.3rem 2rem;
+  background-color: transparent;
+  letter-spacing: 2px;
+}
+
+.button1 {
+  border: none;
+  color: aliceblue;
+}
+
+.button1:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.button2 {
+  border: 1px solid red;
+  color: #f00e0e;
+}
+
+.button2:hover {
+  color: #fb0606;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.becomeMember {
+  background-color: rgba(0, 0, 0, 0.911);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4rem;
+  padding: 4rem 8rem;
+  line-height: 40px;
+  color: aliceblue;
+}
+
+.becomeMember .membership {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  gap: 20px;
+}
+
+.becomeMember .membership button {
+  margin-top: 20px;
+  border: none;
+  background-color: red;
+  padding: 20px;
+  width: 100%;
+  color: aliceblue;
+}
+
+.becomeMember .membership button:hover {
+  color: #fb0606;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.becomeMember .workingHours {
+  -ms-flex-preferred-size: 14%;
+      flex-basis: 14%;
+}
+
+.becomeMember h2 {
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+}
+
+.becomeMember h4 {
+  font-size: 1.5rem;
+}
+
+.becomeMember p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #4d4c4c;
+  letter-spacing: 0;
+}
+
+.becomeMember h6 {
+  font-size: 1.2rem;
+}
+
+.becomeMember hr {
+  height: 250px;
+  border: 0.1px solid rgba(141, 141, 141, 0.089);
+}
+
+#about {
+  font-size: 1.5rem;
+}
+
+#about h4, #about h2 {
+  text-align: center;
+  padding: 7px;
+  background-color: #f8f8f8;
+}
+
+#about p {
+  font-size: 1.3rem;
+  color: #afadad;
+  line-height: 23px;
+}
+
+#about .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 7rem 38rem;
+  gap: 1rem;
+  background-color: #eeebeb;
+}
+
+#about .intro .hello {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding: 40px 40px;
+}
+
+#about .intro .images {
+  -ms-flex-preferred-size: 19%;
+      flex-basis: 19%;
+  background-color: white;
+  margin-right: 40px;
+}
+
+#about .intro .images img {
+  height: 15rem;
+  width: 100%;
+}
+
+#about .intro .images .rounded {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#about .intro .images .fab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+#about .intro .images .fab:hover {
+  color: red;
+  cursor: pointer;
+}
+
+#about .Classes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0 5rem 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f8f8f8;
+}
+
+#about .Classes .images2 {
+  width: 15%;
+  background-color: #fff;
+}
+
+#about .Classes .images2 img {
+  width: 100%;
+  height: 15rem;
+}
+
+#about .Classes .images2 h6 {
+  padding-bottom: 10px;
+  color: #4e4e4e;
+}
+
+#about .Classes .images2 h3, #about .Classes .images2 p, #about .Classes .images2 h6, #about .Classes .images2 span {
+  margin: 10px 40px;
+}
+
+#about .Classes .images2 span {
+  float: right;
+  padding: 13px;
+  background-color: red;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+#PACKAGES {
+  padding: 80px;
+  text-align: center;
+  background: rgba(19, 19, 19, 0.911);
+  font-size: 30px;
+  color: white;
+}
+
+#PACKAGES pre, #PACKAGES p {
+  font-size: 1.1rem;
+  color: #838383;
+  margin-bottom: 1.5rem;
+}
+
+#PACKAGES .twoBoxes {
+  padding: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
+}
+
+#PACKAGES .twoBoxes .box {
+  background-color: #131313;
+  padding: 70px 140px;
+  line-height: 40px;
+}
+
+#PACKAGES .twoBoxes button {
+  background-color: #18beff;
+  padding: 20px 50px;
+  border-radius: 35px;
+  font-size: 15px;
+  color: white;
+}
+
+#PACKAGES .twoBoxes button:hover {
+  color: #fb0606;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.subscribe {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 26, 25, 0.7)), to(rgba(26, 25, 25, 0.7))), url(https://bit.ly/3oH99Pe);
+  background-image: linear-gradient(rgba(26, 26, 25, 0.7), rgba(26, 25, 25, 0.7)), url(https://bit.ly/3oH99Pe);
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 150px;
+  font-size: 25px;
+  color: white;
+  line-height: 70px;
+}
+
+.subscribe p {
+  line-height: 20px;
+  color: gray;
+  font-size: 1.3rem;
+}
+
+.subscribe form input {
+  width: 400px;
+  height: 45px;
+  font-size: 18px;
+}
+
+.subscribe form button {
+  border: none;
+  width: 150px;
+  height: 45px;
+  color: white;
+  background: #111111;
+  font-size: 18px;
+}
+
+.subscribe form button:hover {
+  color: #fb0606;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10rem;
+  padding: 40px;
+  line-height: 100px;
+}
+
+#contact h1 {
+  font-size: 40px;
+}
+
+#contact h3 {
+  font-size: 25px;
+}
+
+#contact i {
+  color: #00ccfff5;
+}
+
+#contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+#contact form input, #contact form button {
+  height: 50px;
+  width: 450px;
+  font-size: 20px;
+}
+
+#contact form textarea {
+  font-size: 20px;
+}
+
+#contact form button {
+  height: 60px;
+  color: #fff;
+  background-color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact form button:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.social-botton {
+  background-color: black;
+  text-align: center;
+  padding: 50px;
+  line-height: 70px;
+  color: #fafafa;
+}
+
+.social-botton h1 {
+  font-size: 40px;
+}
+
+.social-botton .fab {
+  font-size: 30px;
+  margin: 7px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 45%;
+  border: 3px solid white;
+}
+
+.social-botton .fab:hover {
+  color: #fb0606;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-text {
+  background-color: #901a1a;
+  color: #e4e3e3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0 15rem;
+  line-height: 60px;
+}
+
+.footer-text h1 {
+  font-size: 40px;
+}
+
+.footer-text p, .footer-text span {
+  font-size: 1rem;
+  line-height: 40px;
+  font-family: sans-serif;
+}
+
+.footer-text .info {
+  width: 600px;
+}
+
+.rights {
+  background-color: #424242;
+  text-align: center;
+  padding: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #adaca9;
+}
+
+.rights span {
+  color: #923434;
+}
+
+@media (max-width: 1100px) {
+  .whole-text h1 {
+    font-size: 2.2rem;
+  }
+  .whole-text button {
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+  }
+  .whole-text h3 {
+    font-size: 1rem;
+  }
+  .becomeMember {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .becomeMember hr {
+    display: none;
+  }
+  .becomeMember h2 {
+    font-size: 1.9rem;
+  }
+  #about .intro, #about .Classes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem 3rem;
+  }
+  #about .intro .hello, #about .Classes .hello {
+    padding: 40px 22px;
+  }
+  #about .intro .images, #about .intro .images2, #about .Classes .images, #about .Classes .images2 {
+    height: 500px;
+    width: 450px;
+    margin: auto;
+  }
+  header nav {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header nav .fas {
+    display: block;
+    color: white;
+    font-size: 30px;
+  }
+  header #navBar {
+    position: absolute;
+    top: 0;
+    right: -250px;
+    padding: 25px 60px;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #474950;
+    z-index: 2;
+    -webkit-transition: 1s;
+    transition: 1s;
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 2200px) {
+  .becomeMember .membership, .becomeMember .workingHours {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  #about .intro, #about .Classes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 6rem 3rem;
+  }
+  #about .intro .hello, #about .Classes .hello {
+    padding: 40px 50px;
+    width: 600px;
+  }
+  #about .intro .images, #about .intro .images2, #about .Classes .images, #about .Classes .images2 {
+    height: 320px;
+    width: 450px;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */

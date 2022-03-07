@@ -1,0 +1,495 @@
+@mixin mainhover {
+   &:hover{
+        color: red;
+        cursor: pointer;
+    }
+}
+
+@mixin whitehover {
+   &:hover{
+      color: rgb(251, 6, 6);
+      background-color: white;
+      border: none;
+      cursor: pointer;
+  }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-wrap: wrap;
+    scroll-behavior: smooth;
+}
+
+
+header {
+   
+    
+    nav{
+       position: fixed;
+       z-index: 1;
+       background-color: rgba(26, 26, 25, 1);
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       padding: 1.2rem;
+       align-items: center;
+       font-size: 1rem;
+       gap: 0 20rem;
+       .fas {
+         display: none;
+         }
+        ul{
+         display: flex ;
+         gap: 2rem;
+         list-style: none;
+         letter-spacing: 2px;
+        }
+        .logo {
+         background-image: linear-gradient(rgb(131, 131, 131) ,rgb(51, 51, 51));
+         font-size: 2rem;
+         cursor: pointer;
+         color: aqua;
+         @include mainhover();
+        }
+        a{
+        text-decoration: none;
+        @include mainhover();
+        color: white;
+       }
+     }
+     
+}
+
+.whole-text {
+   background-image: linear-gradient(rgba(26, 26, 25, 1),rgba(26, 25, 25, 0.5)), url(https://bit.ly/3qVMFwN);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: fixed;
+   background-size: cover;
+   color: aliceblue;
+   padding-top: 24%;
+}
+
+.text {
+   padding-bottom: 18%;
+   text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: rgb(123, 126, 129);
+}
+
+h1 {
+   font-size: 60px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+   margin-top: 2rem;
+   padding: 1.3rem 2rem;
+   background-color: transparent;
+   letter-spacing: 2px;
+}
+
+.button1{  
+   border: none;
+   @include mainhover();
+   color: aliceblue;
+}
+
+.button2 {
+   border: 1px solid red;
+   color: rgb(240, 14, 14);
+   @include whitehover();
+}
+
+
+
+.becomeMember{
+      background-color: rgba(0, 0, 0, 0.911);
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      padding: 4rem 8rem;
+      line-height: 40px;
+      color: aliceblue;
+      .membership{
+         flex-basis: 20%;
+         gap: 20px;
+         button {
+            margin-top: 20px;
+            border: none;
+            background-color: red;
+            padding: 20px;
+            @include whitehover();
+            width: 100%;
+            color: aliceblue;
+         }
+      }
+      .workingHours{
+         flex-basis: 14%;
+      }
+   
+      h2 {
+      font-size: 2.5rem;
+      padding-bottom: 20px;
+      }
+
+      h4{
+      font-size: 1.5rem; 
+       }
+   
+      p{
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+      color: rgb(77, 76, 76);
+      letter-spacing: 0;
+      }
+   
+      h6{
+         font-size: 1.2rem;
+      }
+   
+      hr {
+         height: 250px;
+         border: 0.1px solid rgba(141, 141, 141, 0.089);
+      }
+   }
+
+
+
+#about {
+
+font-size: 1.5rem;
+
+h4,h2 {
+   text-align: center;
+   padding: 7px;
+   background-color: rgb(248, 248, 248);
+}
+
+p{
+   font-size: 1.3rem;
+   color: rgb(175, 173, 173);
+   line-height: 23px;
+}
+
+   .intro {
+      display: flex;
+      justify-content: center;
+      padding: 7rem 38rem;
+      gap: 1rem;
+      background-color: rgb(238, 235, 235);
+      .hello {
+         flex-basis: 40%;
+         padding: 40px 40px;
+      }
+      .images {   
+         flex-basis: 19%;
+         background-color: rgb(255, 255, 255);
+         margin-right: 40px;
+         img {
+           height: 15rem;
+           width: 100%;
+         }
+         .rounded {
+           padding-top: 10px;
+           display: flex;
+           justify-content: space-around;
+         }
+   
+         .fab {
+          display: flex;
+          font-size: 1.2rem;
+          line-height: 1.8rem;
+          @include mainhover();
+         }
+      }
+   }
+
+     .Classes {    
+      display: flex;
+      gap: 2rem;
+      padding: 2rem 0 5rem 0;
+      justify-content: center;
+      background-color: rgb(248, 248, 248);
+      .images2{
+         width: 15%;
+         background-color: #fff;
+        img {
+           width: 100%;
+           height: 15rem;
+        }
+      h6 {
+         padding-bottom: 10px;
+         color: rgb(78, 78, 78);
+      }
+      h3,p,h6,span {
+       margin: 10px 40px;
+      }
+      span {
+         float: right;
+         padding: 13px;
+         background-color: red;
+         border-radius: 50%;
+         color: #fff;
+         font-size: 1rem;
+         margin-top: 30px;
+      }
+   }
+ }
+}
+
+#PACKAGES{
+   padding: 80px;
+   text-align: center;
+   background: rgba(19, 19, 19, 0.911);
+   font-size: 30px;
+   color: rgb(255, 255, 255);
+   pre,p{
+      font-size: 1.1rem;
+      color:rgb(131, 131, 131);
+      margin-bottom: 1.5rem;
+   }
+   .twoBoxes{
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    .box{
+       background-color:rgb(19, 19, 19) ;
+       padding: 70px 140px;
+       line-height: 40px;
+    }
+    button {
+      background-color: rgb(24, 190, 255);
+      padding: 20px 50px;
+      border-radius: 35px;
+      font-size: 15px;
+      color: rgb(255, 255, 255);
+      @include whitehover();
+    }
+   }
+}
+
+.subscribe{
+   background-image: linear-gradient(rgba(26, 26, 25, 0.7),rgba(26, 25, 25, 0.7)), url(https://bit.ly/3oH99Pe);
+   min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+   text-align: center;
+   padding: 150px;
+   font-size: 25px;
+   color: white;
+   line-height: 70px;
+   p{
+      line-height: 20px;
+      color: rgb(128, 128, 128);
+      font-size: 1.3rem;
+   }
+   form{
+   input {
+      width: 400px;
+      height: 45px;
+      font-size: 18px;
+   }
+   button {
+      border: none;
+      width: 150px;
+      height: 45px;
+      color: white;
+      background: rgb(17, 17, 17);
+      font-size: 18px;
+      @include whitehover();
+   }
+   }
+}
+
+
+
+#contact{
+   display: flex;
+   justify-content: center;
+   gap: 10rem;
+   padding: 40px;
+   line-height: 100px;
+   h1 {
+      font-size: 40px;
+   }
+   h3 {
+      font-size: 25px;
+   }
+   i {
+      color: #00ccfff5;
+   }
+   form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      input , button {
+         height: 50px;
+         width: 450px;
+         font-size: 20px;
+      }
+      textarea {
+         font-size: 20px;
+      }
+      button {
+         height: 60px;
+         color: #fff;
+         background-color: black;
+         @include mainhover();
+         align-items: center;
+      }
+   }
+}
+
+.social-botton {
+   background-color: black;
+   text-align: center;
+   padding: 50px ;
+   line-height: 70px;
+   color: rgb(250, 250, 250);
+   h1 {
+      font-size: 40px;
+   }
+   .fab {
+    font-size: 30px;
+    margin: 7px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 45%;
+    border: 3px solid white;
+    @include whitehover();
+   }
+}
+
+.footer-text {
+   background-color: rgb(144, 26, 26);
+   color: rgb(228, 227, 227);
+   display: flex;
+   justify-content: center;
+   gap: 0 15rem;
+   line-height: 60px;
+   h1 {
+      font-size: 40px;
+   }
+   p , span{
+      font-size: 1rem;
+      line-height: 40px;
+      font-family: sans-serif;
+   }
+   .info{
+      width: 600px;
+   }
+}
+.rights {
+   background-color: rgb(66, 66, 66);
+   text-align: center;
+   padding: 5px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(173, 172, 169);
+   span {
+      color: rgb(146, 52, 52);
+   }
+}
+
+
+@media (max-width: 1100px) {
+   .whole-text {
+      h1 {
+         font-size: 2.2rem;
+      }
+      button {
+         margin-top: 1.5rem;
+         padding: 1rem 1.5rem;
+      }
+
+      h3{
+         font-size: 1rem;
+      }
+   } 
+   .becomeMember{
+      flex-direction: column;
+      hr {
+         display: none;
+      }
+      h2{
+         font-size: 1.9rem;
+      }
+   }
+
+   #about {
+
+      .intro,.Classes {
+         flex-direction: column;
+         padding: 2rem 3rem;
+         .hello {
+            padding: 40px 22px;
+         }
+         .images,.images2 {   
+            height: 500px;
+            width: 450px;
+            margin: auto;
+          }
+         } }
+
+   header {
+         
+            nav { 
+               flex-wrap: nowrap;
+               justify-content: space-between;
+               .fas {
+                  display: block;
+                  color:white;
+                  font-size: 30px;
+               }
+            }
+              #navBar{
+                 position: absolute;
+                 top : 0;
+                 right: -250px;
+                 padding: 25px 60px;
+                 height: 100vh;
+                 flex-direction: column;
+                 background-color: rgb(71, 73, 80);
+                 z-index: 2;
+                 transition: 1s;
+                 font-size: 22px;
+              }
+
+         }
+   }
+
+   @media (min-width: 1100px) and (max-width: 2200px) {
+      .becomeMember {
+         .membership,.workingHours {
+            flex-basis: 40% ;
+        }
+
+      }
+
+      #about {
+         .intro,.Classes {
+            flex-direction: row;
+            padding: 6rem 3rem;
+            .hello {
+               padding: 40px 50px;
+               width: 600px; 
+            }
+            .images,.images2 {   
+               height: 320px;
+               width: 450px;
+               margin: auto;
+             }
+            } }
+    }
